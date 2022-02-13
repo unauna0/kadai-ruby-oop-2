@@ -15,15 +15,8 @@ end
 
 class RailsMentor < Menter
   
-  attr_accessor :suffix
-  
-  def initialize(suffix)
-    super(name)
-    self.suffix = suffix
-  end
-  
-  def name
-    self.suffix
+  def initialize(name)
+    super
   end
   
   def job
