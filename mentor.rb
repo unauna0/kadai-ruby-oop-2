@@ -1,4 +1,4 @@
-class Menter
+class Mentor
   
   attr_accessor :name
   
@@ -13,11 +13,7 @@ class Menter
   
 end
 
-class RailsMentor < Menter
-  
-  def initialize(name)
-    super
-  end
+class RailsMentor < Mentor
   
   def job
     puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
@@ -27,7 +23,7 @@ end
 
 
 
-kirameki = Menter.new("煌木")
+kirameki = Mentor.new("煌木")
 akaide = RailsMentor.new("赤出")
 
 kirameki.job
